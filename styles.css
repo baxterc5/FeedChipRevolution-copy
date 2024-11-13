@@ -1,0 +1,132 @@
+/* Base Style */
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Logo and Header */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+}
+
+/* Layout for Calculator Containers */
+.calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Calculator Box Styling */
+.calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+/* Form Group and Input Fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #A12D27;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-group button:hover {
+    background-color: #911D1A;
+}
+
+/* Result Text */
+.result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #444;
+    display: block; /* Ensure results are always displayed on mobile */
+}
+
+/* Desktop Width Adjustment */
+@media (min-width: 992px) {
+    .calculator {
+        max-width: 500px; /* Wider calculators for desktop */
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .calculator-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .calculator {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .form-group input, .form-group button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}

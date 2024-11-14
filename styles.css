@@ -89,6 +89,15 @@ h1 {
     display: block; /* Ensure results are always displayed on mobile */
 }
 
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding/border are within the 100% width */
+}
+
 /* Desktop Width Adjustment */
 @media (min-width: 992px) {
     .calculator {
